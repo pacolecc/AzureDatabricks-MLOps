@@ -242,6 +242,6 @@ Now finally create another pipeline, add a new Databricks Notebook task, link it
 
 ![8.Pipeline](images/8.Pipeline.png)
 
-Click the Debug button in Azure Data Factory to run the Test Pipeline(Pre-production test) first and the Production scoring one after the Test Pipeline completes.   
+Click the Debug button in Azure Data Factory Studio to run the Test Pipeline(Pre-production test) first and the Production scoring one after the Test Pipeline completes.   
 It will perform the batch scoring of your spark model in your Production environment using the HoldoutDiabetes.csv data provided.
 
