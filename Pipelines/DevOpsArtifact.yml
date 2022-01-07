@@ -1,0 +1,17 @@
+trigger:
+  branches:
+    include:
+    - refs/heads/main
+jobs:
+- job: Job_1
+  displayName: Agent job 1
+  pool:
+    vmImage: windows-2019
+  steps:
+  - checkout: self
+  - task: PublishBuildArtifacts@1
+    displayName: 'Publish Artifact: Notebooks'
+    inputs:
+      PathtoPublish: Notebooks
+      ArtifactName: Notebooks
+...
